@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a {
+            width: 200px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="a"></div>
+
+    <script>
+        $(document).ready(function() {
+            $(".a").hide(2000)
+                   .show(3000)
+                   .fadeOut(2000)
+                   .fadeIn(2000)
+                   .slideUp(2000)
+                   .slideDown(7000);
+        });
+    </script>
+</body>
+</html>
