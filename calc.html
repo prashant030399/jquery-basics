@@ -1,0 +1,114 @@
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+
+            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+            <style>
+.container{
+
+    width:50%;
+    margin-left:25%;
+    background-color:yellow;
+
+height:300px;
+margin-top:170px;
+
+}
+.button{ 
+
+    width:40px; height:40px; font-size:40px;
+}
+
+
+
+            </style>
+        </head>
+        <body>
+        <div class ="container">
+
+        <center style="font-weight:bolder; font-size:40px;">  Calculator using jQuery</center><br>
+
+ <center>       Enter First no.<input type="text" id="t1" style="width:200px; height:25px;"> <br> <br>
+    Enter Second no.   <input type="text" id="t2"style="width:200px; height:25px;"> <br> <br>
+
+        <button id="b1"  class="button"> + </button>
+        <button id="b2" class="button"  > - </button>
+        <button id="b3"   class="button"> * </button>
+        <button id="b4"   class="button"> / </button>
+
+        <p id="z"></p>   </center>
+
+        </div>
+
+
+        <script>
+
+
+        $(document).ready(    function()
+        {   
+
+
+        $("#b1").click(   
+        function ()
+        {
+        var a= $("#t1").val();
+        var b = $("#t2").val();
+        var c = parseInt(a) + parseInt(b);
+        $("#z").html(c);
+        });
+       
+
+
+        $("#b2").click(
+            function ()
+            {  
+                var a = $("#t1").val();
+                var b= $("#t2").val();
+                var d = parseInt(a) - parseInt(b);
+                $("#z").html(d);
+
+            });
+
+
+                    $("#b3").click(
+            function ()
+            {  
+                var a = $("#t1").val();
+                var b= $("#t2").val();
+                var e = parseInt(a) * parseInt(b);
+                $("#z").html(e);
+
+            });
+
+
+        $("#b4").click(
+            function ()
+            {  
+                var a = $("#t1").val();
+                var b= $("#t2").val();
+                var f = parseInt(a) / parseInt(b);
+                $("#z").html(f);
+
+            });
+
+
+
+               
+    
+
+        });
+
+
+
+        </script>
+
+
+        </body>
+
+
+
+

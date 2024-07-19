@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+Enter First No.<input type="text" id="t1">
+Enter Second No.<input type="text" id="t2">
+<button id="b1">Calculate</button>
+<p id="z"></p>
+
+<script>
+$(document).ready(function() {
+    $("#b1").click(function() {
+        var a = $("#t1").val();
+
+
+        var b = $("#t2").val();
+        var c = parseInt(a) + parseInt(b);
+        $("#z").html(c);
+    });
+});
+
+
+</script>
+
+</body>
+</html>
