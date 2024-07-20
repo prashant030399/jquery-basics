@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+        <html>
+        <head>
+
+            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+        </head>
+
+
+        <body>
+        <h1>jQuery - Append Table </h1>
+        
+        <table id="t1" border='1'><tr>
+        <td> Roll No.  </td> <td> Name  </td> <td> Marks  </td>  </tr>
+        <button id="b1">+</button>
+
+<script>
+$(document).ready(function() {
+    $("#b1").click(function() {
+        $("#t1").append("<tr><td><input type='text'></td><td><input type='text'<td><input type='text'></td>></td></tr>");
+    });
+
+    
+});
+
+
+
+
+
+
+
+</script>
+
+
+       </table>
+
+
+
+        </body>

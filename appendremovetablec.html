@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <table id="t1" border="1">
+        <tr>
+            <td>Roll No.</td>
+            <td>Name</td>
+            <td>Marks</td>
+        </tr>
+    </table>
+    <button id="b1">+</button>
+    <button id="b2">-</button>
+
+    <script>
+        $(document).ready(function() {
+            
+            $("#b1").click(function() {
+                $("#t1").append("<tr><td><input type='text'></td><td><input type='text'></td><td><input type='text'></td></tr>");
+            });
+
+
+            $("#b2").click(function() {
+                // Remove the last row if there are more than one row
+                if ($("#t1 tr").length > 1) {
+                    $("#t1 tr:last").remove();
+                }
+            });
+
+            
+
+            
+
+
+
+        });
+    </script>
+</body>
+</html>
